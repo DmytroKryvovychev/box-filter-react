@@ -1,0 +1,93 @@
+html,
+body {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana,
+    sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.box {
+  border-radius: 4px;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+  min-height: 140px;
+  min-width: calc(22% - 28px);
+  padding: 0 10px;
+  margin: 15px;
+  border-width: 3px;
+  float: left;
+}
+
+.box.crimson {
+  border: 3px solid #d82c18;
+}
+.box.wisteria {
+  border: 3px solid #9f3ec9;
+}
+.box.emerald {
+  border: 3px solid #2eb365;
+}
+.box.azure {
+  border: 3px solid #33a1eb;
+}
+.box.sunflower {
+  border: 3px solid #f1c40f;
+}
+
+.text-all {
+  color: white;
+  text-transform: uppercase;
+}
+
+.text-crimson {
+  color: #d82c18;
+  text-transform: uppercase;
+}
+.text-wisteria {
+  color: #9f3ec9;
+  text-transform: uppercase;
+}
+.text-emerald {
+  color: #2eb365;
+  text-transform: uppercase;
+}
+.text-azure {
+  color: #33a1eb;
+  text-transform: uppercase;
+}
+.text-sunflower {
+  color: #f1c40f;
+  text-transform: uppercase;
+}
+.hide {
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
