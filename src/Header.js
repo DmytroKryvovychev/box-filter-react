@@ -25,6 +25,9 @@ function Header({ items }) {
   return (
     <nav ref={sortRef}>
       <ul>
+        <li data-f="all" className="text-all">
+          All
+        </li>
         {items.map((item) => (
           <li key={item} data-f={item} className={`text-${item}`}>
             {item}
@@ -36,17 +39,3 @@ function Header({ items }) {
 }
 
 export default Header;
-
-//const filterBox = document.querySelectorAll('.box');
-
-//document.querySelector('nav').addEventListener('click', (event) => {
-// if (event.target.tagName !== 'LI') return false;
-//let filterClass = event.target.dataset['f'];
-
-// filterBox.forEach((elem) => {
-//  elem.classList.remove('hide');
-// if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-//   elem.classList.add('hide');
-//  }
-// });
-//});
